@@ -1,0 +1,20 @@
+Package: bash-it
+Version: 3.0.3
+Section: shells
+Priority: optional
+Architecture: all
+Depends: bash (>=3.2), coreutils
+Suggests: curl, ssh
+Maintainer: Timur Dautov <roomitytcommercial@gmail.com>
+Description: collection of community Bash commands and scripts for Bash
+  Includes autocompletion, themes, aliases, custom functions, a few stolen
+ pieces from Steve Losh, and more.
+ .
+ Bash-it provides a solid framework for using, developing and maintaining
+ shell scripts and custom commands for your daily work. If you're using the
+ Bourne Again Shell (Bash) regularly and have been looking for an easy way on
+ how to keep all of these nice little scripts and aliases under control, then
+ Bash-it is for you.
+ .
+ Stop polluting your ~/bin directory and your .bashrc file, fork/clone
+ Bash-it and start hacking away.

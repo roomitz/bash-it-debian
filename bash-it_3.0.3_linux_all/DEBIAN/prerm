@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+pkill -f bash_it || true
+
+if [ "$1" = "remove" ]; then
+    echo "Note: User configurations will remain in home directories"
+    echo "If you want to completely remove bash-it from your profile,"
+    echo "you may need to edit your ~/.bashrc manually"
+fi
+
+exit 0

@@ -1,0 +1,19 @@
+name: Monitor Bash-it Upstream Release
+
+on:
+  schedule:
+    - cron: '*/1 * * * *' 
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    outputs:
+      new_release: ${{ steps.check.outputs.new_release }}
+      latest_version: ${{ steps.check.outputs.latest_version }}
+    steps:
+      - name: Get latest bash-it version
+        id: get_latest
+        run: |
+          latest=$(curl -s https://api.github.com/repos/Bash-it/bash-it/releases/latest | jq -r .tag_name)
+          echo "latest_bashit=$latest" >> $GITHUB_ENV

@@ -11,7 +11,7 @@ sudo apt-get install -f
 ```
 **Or build from source**
 ```
-git clone https://github.com/youruser/bash-it-debian.git
+git clone https://github.com/roomitz/bash-it-debian.git
 cd bash-it-debian
 UPSTREAM_VERSION=2025.x.y make build
 UPSTREAM_VERSION=2025.x.y make install

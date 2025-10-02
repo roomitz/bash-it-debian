@@ -5,11 +5,11 @@ This repository hosts Debian packaging for [bash-it](https://github.com/Bash-it/
 # 📥Installation
 **Download prebuilt package (recommended)**
 ```
-wget https://github.com/roomitz/bash-it-debian/releases/latest/download/bash-it_2025.x.y-1_all.deb
-sudo dpkg -i bash-it_2025.x.y-1_all.deb
+wget https://github.com/roomitz/bash-it-debian/releases/latest/download/bash-it_3.0.3_linux_all.deb
+sudo dpkg -i bash-it_3.0.3_linux_all.deb
 sudo apt-get install -f
 ```
-**Or build from source**
+**Or build from source(currently not available)**
 ```
 git clone https://github.com/roomitz/bash-it-debian.git
 cd bash-it-debian
